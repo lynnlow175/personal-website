@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Header.js";
+import Doodle from "./Doodlecss.js";
+import Intro from "./Intro.js";
+import Button from "./Button.js";
+import { useState } from "react";
 
 function App() {
+  const [hoveredIcon, setHoveredIcon] = useState(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Intro />
+      <Header />
+      <Doodle />
+      <Button isHovered={hoveredIcon === "github"}>Hello</Button>
     </div>
   );
 }

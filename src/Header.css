@@ -1,0 +1,67 @@
+.word {
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  top: 100px;
+  z-index: 1; /* Place the header above the doodle (z-index: 1) */
+}
+
+.intro {
+  position: absolute;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  color: white;
+  top: 20px;
+  z-index: 1; /* Place the header above the doodle (z-index: 1) */
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  z-index: 1;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.button {
+  width: auto;
+  text-align: center;
+  font-size: large;
+  color: aliceblue;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+}

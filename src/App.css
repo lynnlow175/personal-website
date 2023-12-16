@@ -1,8 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
+.image {
   height: 40vmin;
   pointer-events: none;
 }
@@ -14,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: pink;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
