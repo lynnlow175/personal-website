@@ -58,10 +58,19 @@
 
 .button {
   width: auto;
-  text-align: center;
   font-size: large;
-  color: aliceblue;
   z-index: 1;
   position: absolute;
   top: 40%;
+  fill: white;
+  margin-right: 10px;
+}
+.button:hover {
+  fill: #da7979;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
 }
