@@ -61,16 +61,43 @@
   font-size: large;
   z-index: 1;
   position: absolute;
-  top: 40%;
+  top: 200px;
   fill: white;
   margin-right: 10px;
 }
 .button:hover {
-  fill: #da7979;
+  fill: rgb(245, 168, 168);
 }
 
 .socials {
   display: flex;
   justify-content: space-evenly;
+}
+
+.education {
   z-index: 1;
+  position: absolute;
+  background: linear-gradient(
+    57.4deg,
+    rgb(249, 206, 183) 4.6%,
+    rgb(234, 174, 202) 26%,
+    rgb(210, 182, 226) 49.1%,
+    rgb(173, 209, 242) 86.5%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  top: 300px;
+  left: 5%;
+}
+.examples {
+  margin: 20px;
+}
+.examples menu {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+
+  justify-content: space-between;
+  margin: 12px;
 }

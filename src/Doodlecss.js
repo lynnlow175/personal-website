@@ -7,8 +7,7 @@ const DoodleComponent = () => {
     <div>
       <css-doodle>
         {`
-          @grid: 7 / 100vmax / #000000;
-          
+          @grid: 7 / 100vmax / black;          
           @shape: star 5;
           @size: 5vmin; /* Adjust the size to make stars smaller */
           background: hsla(210, 0%, 100%, @r.8);
