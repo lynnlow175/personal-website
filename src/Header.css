@@ -90,14 +90,29 @@
   top: 300px;
   left: 5%;
 }
-.examples {
+.education {
   margin: 20px;
 }
-.examples menu {
+.education menu {
   display: flex;
   gap: 16px;
   width: 100%;
-
   justify-content: space-between;
   margin: 12px;
+}
+.education menu button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #a18aba;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.education menu button:hover {
+  background-color: #1b082f;
+  color: white;
 }
